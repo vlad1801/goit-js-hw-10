@@ -1,0 +1,65 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  background-image: url(https://images.pexels.com/photos/2807297/pexels-photo-2807297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+  background-size: cover;
+}
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.breed-select {
+  max-width: 500px;
+  margin: auto;
+  color: black;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border: 2px solid #0d161b;
+  border-radius: 4px;
+}
+
+.cat-info {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.loader {
+  margin: 0 auto;
+  width: 48px;
+  height: 48px;
+  border: 5px dotted #2596be;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
